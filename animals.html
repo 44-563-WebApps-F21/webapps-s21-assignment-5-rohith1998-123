@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title> Animals Page</title>
+    <title>Animals Page</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -22,29 +22,268 @@
       crossorigin="anonymous"
     ></script>
   </head>
- 
-  <body>
 
-   <h1>Animals by Rohith</h1>
-   <div class="container">
-    <div class="row">
+  <body>
+    
+    <div class="container">
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="animals.html">Interesting Animals</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="plane.html"
+                >Plane</a
+              >
+            </li>
+            <li>
+              <a class="nav-link" href="train.html">Train</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  
+      <h1>Animals by Rohith</h1>
+      <div class="row">
         <div class="col-sm-2">K</div>
         <div class="col-sm-2">O</div>
         <div class="col-sm-2">N</div>
         <div class="col-sm-2">D</div>
         <div class="col-sm-2">L</div>
         <div class="col-sm-2">E</div>
-    </div>
-    <div class="row">
+      </div>
+      <div class="row">
         <div class="col-md">Kangaroo</div>
         <div class="col-md">ocelot</div>
         <div class="col-md">Nilgai</div>
         <div class="col-md">Dog</div>
         <div class="col-md">Lion</div>
         <div class="col-md">Elephant</div>
-    </div>
+      </div>
 
-    <div>As we observe when we resize it slowly the rows with Animal names break first at 767 x 578 px and then the rows with Animal letters breaks at 575 x 578 px</div>
-</div>
+      <div>
+        As we observe when we resize it slowly the rows with Animal names break
+        first at 767 x 578 px and then the rows with Animal letters breaks at
+        575 x 578 px
+      </div>
+
+      <div class="conatiner">
+        <img
+          src="./images/kangaroo.jpg"
+          class="img-fluid"
+          alt="kangaroo"
+          height="500"
+          width="400"
+        />
+        <img
+          src="./images/ocelot.png"
+          class="img-fluid"
+          alt="ocelot"
+          height="500"
+          width="400"
+        />
+        <img
+          src="./images/Nilgai.jpg"
+          class="img-fluid"
+          alt="Nilgai"
+          height="500"
+          width="400"
+        />
+      </div>
+
+      <div class="container">
+        <img
+          src="./images/kangaroo.jpg"
+          class="img-thumbnail"
+          alt="kangaroo"
+          height="200"
+          width="200"
+        />
+        <img
+          src="./images/ocelot.png"
+          class="img-thumbnail"
+          alt="ocelot"
+          height="200"
+          width="200"
+        />
+        <img
+          src="./images/Nilgai.jpg"
+          class="img-thumbnail"
+          alt="Nilgai"
+          height="200"
+          width="200"
+        />
+      </div>
+
+      <div class="table-responsive">
+        <table
+          class="
+            table table-dark table-striped table-bordered table-hover table-sm
+          "
+        >
+          <caption>
+            These are the List of Animals, City and Car names with Starting
+            Letters of my surname.
+          </caption>
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Letter</th>
+              <th scope="col">Animal</th>
+              <th scope="col">City</th>
+              <th scope="col">Car</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-primary">
+              <th scope="row">K</th>
+              <td>Kangaroo</td>
+              <td>Kerala</td>
+              <td>Kia</td>
+            </tr>
+            <tr class="table-success">
+              <th scope="row">O</th>
+              <td>Ocelot</td>
+              <td>Ontario</td>
+              <td>Opel</td>
+            </tr>
+            <tr class="table-warning">
+              <th scope="row">N</th>
+              <td>Nilgai</td>
+              <td>Nigeria</td>
+              <td>Nissan</td>
+            </tr>
+            <tr class="table-danger">
+              <th scope="row">D</th>
+              <td>Dog</td>
+              <td>Doha</td>
+              <td>Duster</td>
+            </tr>
+            <tr class="table-info">
+              <th scope="row">L</th>
+              <td>Lion</td>
+              <td>Ladakh</td>
+              <td>Lamborghini</td>
+            </tr>
+            <tr class="table-secondary">
+              <th scope="row">E</th>
+              <td>Elephant</td>
+              <td>Egypt</td>
+              <td>Electrum</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="btn-toolbar" role="toolbar" aria-label="Buttons">
+        <div class="btn-group" role="group" aria-label="First Group">
+          <button type="button" class="btn btn-secondary btn-success">K</button>
+          <button type="button" class="btn btn-secondary btn-success">O</button>
+          <button type="button" class="btn btn-secondary btn-success">N</button>
+        </div>
+        <div class="btn-group" role="group" aria-label="Second Group">
+          <button type="button" class="btn btn-secondary btn-warning">D</button>
+          <button type="button" class="btn btn-secondary btn-warning">L</button>
+        </div>
+        <div class="btn-group" role="group" aria-label="Third Group">
+          <button type="button" class="btn btn-danger">E</button>
+        </div>
+      </div>
+
+      <pre></pre>
+
+      <div class="dropdown">
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          id="Drop"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Dropdown
+        </button>
+        <div class="dropdown-menu" aria-labelledby="Drop">
+          <li><a class="dropdown-item" href="./plane.html">Plane Page</a></li>
+          <li><a class="dropdown-item" href="./train.html">Train Page</a></li>
+        </div>
+      </div>
+    
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail">Email address</label>
+        <input
+          type="email"
+          class="form-control"
+          id="emailExample"
+          aria-describedby="emailHelp"
+          placeholder="Enter email"
+        />
+        <small id="emailHelp" class="form-text text-muted"
+          >We'll never share your email with anyone else.</small
+        >
+      </div>
+      <div class="form-group">
+        <label for="animalName">Animal</label>
+        <input
+          type="text"
+          class="form-control"
+          id="animalName"
+          aria-describedby="emailHelp"
+          placeholder="Enter your Animal"
+        />
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+        <label class="form-check-label" for="exampleCheck1"
+          >Sign up for news Letter?</label
+        >
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    
+
+    <pre></pre>
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card" style="width: 18rem;">
+                <img src="./images/kangaroo.jpg" class="card-img-top" alt="kangaroo">
+                <div class="card-body">
+                    <h5 class="card-title">Kangaroo</h5>
+                    <p class="card-text">The kangaroo is a marsupial from the family Macropodidae (macropods, meaning "large foot"). In common use the term is used to describe the largest species from this family.</p>
+                    <a href="https://en.wikipedia.org/wiki/Kangaroo" class="btn btn-primary">kangaroo</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card" style="width: 18rem;">
+                <img src="./images/Nilgai.jpg" class="card-img-top" alt="Nilgai">
+                <div class="card-body">
+                    <h5 class="card-title">Nilgai</h5>
+                    <p class="card-text">The nilgai (Boselaphus tragocamelus) (/ˈnɪlˌɡaɪ/, literally meaning "blue cow") is the largest Asian antelope and is ubiquitous across the northern Indian subcontinent.</p>
+                    <a href="https://en.wikipedia.org/wiki/Nilgai" class="btn btn-primary">Nilgai</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card" style="width: 18rem;">
+                <img src="./images/ocelot.png" class="card-img-top" alt="ocelot">
+                <div class="card-body">
+                    <h5 class="card-title">Ocelot</h5>
+                    <p class="card-text">The ocelot (Leopardus pardalis) is a medium-sized spotted wild cat that reaches 40–50 cm (15.7–19.7 in) at the shoulders and weighs between 8 and 15.5 kg.</p>
+                    <a href="https://en.wikipedia.org/wiki/lion" class="btn btn-primary">Ocelot</a>
+                </div>
+            </div>
+        </div>
+      </div>
   </body>
 </html>
